@@ -1,2 +1,0 @@
-# dependency
-pip install -U django-jazzmin

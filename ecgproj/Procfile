@@ -1,0 +1,1 @@
+web gunicorn ecgproj.wsgi:application --log-file -
