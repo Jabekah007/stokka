@@ -13,8 +13,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 from pathlib import Path
 
-
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,7 +26,7 @@ SECRET_KEY = 'django-insecure-9kq0i2phrrp!ocrz8*v@0xig9_8$$qx1m6*bll6yw!7c^$y_^!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.43.236']
 
 
 # Application definition
@@ -105,8 +103,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
@@ -140,10 +136,10 @@ JAZZMIN_SETTINGS = {
     "site_brand": "Stokka",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "/img/stk3.png",
+    "site_logo": "/images/stk3.png",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
-    "login_logo": "/img/stk3.png",
+    "login_logo": "/images/stk3.png",
 
     # Logo to use for login form in dark themes (defaults to login_logo)
     "login_logo_dark": None,
@@ -152,7 +148,7 @@ JAZZMIN_SETTINGS = {
     "site_logo_classes": "img-circle",
 
     # Relative path to a favicon for your site, will default to site_logo if absent (ideally 32x32 px)
-    "site_icon": "/img/stk3.png",
+    "site_icon": "/images/stk3.png",
 
     # Welcome text on the login screen
     "welcome_sign": "Welcome to Stokka",

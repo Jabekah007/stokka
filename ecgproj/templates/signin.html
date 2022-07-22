@@ -1,26 +1,74 @@
 {% load static %}
-
-<!DOCTYPE html>
 <html lang="en">
-
-
-
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/LESS.css'%}">
+   
+   
     
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-
-    <title>sign in</title>
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap" rel="stylesheet">
 </head>
+<body id="bg" style="background-image:url('{%static  "images/bak.png" %}'); background-size:cover; background-repeat:no-repeat;position:100vh;" >
+  <div class="overlay">
+    <!-- LOGN IN FORM by Omar Dsoky -->
+   
+    <style>
+      h5{
+          color: #fa870d;
+      }
+      
 
-<body class="align">
-
-    
+       
+    </style>
+  {%for message in messages%}
+ 
+  <h5> {{message}}</h5>
+  {%endfor%}
+   
+    <form  action="" method="POST">{%csrf_token%}
+      
+       <!--   con = Container  for items in the form-->
+       <div class="con">
+       <!--     Start  header Content  -->
+       <img  src="{%static './images/stk4.png'%}">
+       <!--     End  header Content  -->
+       <br>
+       <div class="field-set">
   
-  </body>
-
-
+            <!--   user name Input-->
+             <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required name="username">
+         
+          <br>
+         
+               <!--   Password -->
+         
+          <span class="input-item">
+            <i class="fa fa-key"></i>
+           </span>
+          <!--   Password Input-->
+          <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required >
+         
+    <!--      Show/hide password  -->
+         
+         
+          <br>
+    <!--        buttons -->
+    <!--      button LogIn -->
+          <button class="log-in" type="submit" > login</button>
+       </div>
+      
+  
+         
+    <!--   End Conrainer  -->
+      </div>
+      
+      <!-- End Form -->
+    </form>
+    </div>
+</body>
 </html>
