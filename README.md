@@ -64,4 +64,9 @@ Khand Bold = canva.com
 
 # color
 - #fa870d
-- 
+- #3871c1
+-#3e403f
+-#5E6472
+-#152039
+-#737373
+-#d9d9d9
