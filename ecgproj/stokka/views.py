@@ -29,3 +29,8 @@ def signin(request):
 @login_required(login_url='signin')
 def index(request):
     return render(request,"index.html")
+
+@login_required(login_url='signin')
+def logout(request):
+    auth.logout(request)
+    return redirect('signin')
