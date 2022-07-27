@@ -438,7 +438,7 @@ nav .profile-details i{
     min-width: 40px;
   }
   .home-content .request-boxes .request-details{
-    width: 560px;
+    width: 550px;
   }
 }
 @media (max-width: 550px) {
@@ -453,6 +453,7 @@ nav .profile-details i{
   @media (max-width: 400px) {
   .sidebar{
     width: 0;
+    
   }
   .sidebar.active{
     width: 60px;
@@ -469,8 +470,8 @@ nav .profile-details i{
     width: 100%;
     left: 0;
   }
-  .sidebar.active ~ .home-section nav{
+  .sidebar.active  .home-section nav{
     left: 60px;
     width: calc(100% - 60px);
   }
-}
+}     
