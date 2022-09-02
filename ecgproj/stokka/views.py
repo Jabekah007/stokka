@@ -75,7 +75,7 @@ def signin(request):
 def index(request):
     return render(request,"index.html",{})
 
-ADD PRODUCT
+
 @login_required(login_url='signin')
 def base(request):
     return render(request,"base.html",{})
