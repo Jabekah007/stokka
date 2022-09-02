@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!--password icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!--Bootstrap cdn-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/LESS.css'%}">
     <title>Document</title>
 </head>
 <body id="bg" style="background-image:url('{%static  "images/bak.png" %}'); background-size:cover; background-repeat:no-repeat; height:100%;display:grid;" >
   <div class="overlay">
-    <!-- LOGN IN FORM by Omar Dsoky -->
+  
    
     <style>
       h5{
@@ -29,14 +32,14 @@
 
        
     </style>
-  {%for message in messages%}
- 
-  <h5> {{message}}</h5>
-  {%endfor%}
+   
    
     <form  action="" method="POST">{%csrf_token%}
-      
-       <!--   con = Container  for items in the form-->
+      {%for message in messages%}
+ 
+      <h5> {{message}}</h5>
+      {%endfor%}
+       <!--   con = Container  for items in the form-->+
        <div class="con">
        <!--     Start  header Content  -->
        <img  src="{%static './images/stk4.png'%}">
@@ -94,6 +97,6 @@
       
       <!-- End Form -->
     </form>
-    </div>
+  </div>
 </body>
 </html>

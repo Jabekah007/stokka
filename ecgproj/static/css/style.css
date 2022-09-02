@@ -27,8 +27,9 @@ body{
   width: 60px;
 }
 
- .sidebar .logo{
+.sidebar.logo{
   display: flex;
+  gap:0.8rem;
 }
 
 img{
@@ -387,7 +388,7 @@ nav .profile-details i{
   .sidebar{
     width: 60px;
   }
-  .sidebar.active{
+  .sidebar .active{
     width: 220px;
   }
   .home-section{
@@ -446,9 +447,11 @@ nav .profile-details i{
     width: 100%;
     margin-bottom: 15px;
   }
-  .sidebar.active ~ .home-section nav .profile-details{
-    display: none;
+  .home-section nav .sidebar-button{
+    width: 0;
+    
   }
+  
 }
   @media (max-width: 400px) {
   .sidebar{
@@ -474,4 +477,13 @@ nav .profile-details i{
     left: 60px;
     width: calc(100% - 60px);
   }
-}     
+
+  
+} 
+
+/*Button in {add/adit}*/
+.btn-width{
+  width: 80px;
+}
+
+

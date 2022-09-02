@@ -1,0 +1,100 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Abekah page title </title>
+   
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{% static 'css/style.css'%}">
+     <!--Bootstrap cdn css-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <!--Bootstrap cdn js-->
+   </head>
+<body>
+  
+  <div class="sidebar">
+    <div class="logo-details">
+      <!-- <i class='bx bxl-c-plus-plus'></i> -->
+      <div class="logo">
+        <img src="{% static './images/stk4.png' %}" alt="">
+      </div>
+      <span class="logo_name">Welcome <span style="color: orange;">user</span></span>
+    </div>
+     <!--
+      
+     --> <ul class="nav-links">
+        <li>
+          <a href="/dashboard"  >
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+       
+        <li>
+          <a href="/inventory" class="active">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Inventory</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-support' ></i>
+            <span class="links_name">Support</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="logout">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name" >Logout</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Inventory</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <!--<img src="images/profile.jpg" alt="">-->
+        <span class="admin_name">Username</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+  </section>
+  
+ 
+    
+  
+
+  
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
+

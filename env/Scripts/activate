@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\23320\Desktop\stokka\env"
+VIRTUAL_ENV="C:\Users\23320\Documents\GitHub\stokka\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

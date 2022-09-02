@@ -12,6 +12,7 @@
      
    </head>
 <body>
+  
   <div class="sidebar">
     <div class="logo-details">
       <!-- <i class='bx bxl-c-plus-plus'></i> -->
@@ -22,15 +23,16 @@
     </div>
      <!--
       
-     --> <ul class="nav-links">
+     --> {%block dashboard%}<ul class="nav-links">
         <li>
-          <a href="#Dashboard" class="active">
+          <a href="/dashboard" >
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
         </li>
+        {%endblock%}
         <li>
-          <a href="#">
+          <a href="/inventory">
             <i class='bx bx-box' ></i>
             <span class="links_name">Inventory</span>
           </a>
@@ -49,6 +51,7 @@
         </li>
       </ul>
   </div>
+
   <section class="home-section">
     <nav>
       <div class="sidebar-button">
@@ -209,25 +212,7 @@
         });
       });
 </script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
-  
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
-    <script type="text/javascript">
-      $(document).ready( function () {
-    $('#myTable').DataTable();
-} );
-    </script>
-  <script>
-   let sidebar = document.querySelector(".sidebar");
-let sidebarBtn = document.querySelector(".sidebarBtn");
-sidebarBtn.onclick = function() {
-  sidebar.classList.toggle("active");
-  if(sidebar.classList.contains("active")){
-  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
-}else
-  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-}
- </script>
+   
 
 </body>
 </html>

@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
 
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@400;600;700&display=swap');
+
+
 /* End Fonts */
 /* Start Global rules */
 * {
@@ -54,15 +57,12 @@ form {
 form .con {
     display: -webkit-flex;
     display: flex;
-  
     -webkit-justify-content: space-around;
     justify-content: center;
     align-items:center;
-  
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-  
-      margin: 0 auto;
+    margin: 0 auto;
 }
 
 /* the header form form */
@@ -194,4 +194,45 @@ button:hover {
     100% {
         transform: translateY(5px);
     }
+}
+
+
+/*Unique input style*/
+ form .field-set .row{
+    height: 47px;
+    margin-bottom: 15px;
+    position: relative;
+    
+}
+
+ form .field-set .row input{
+    height: 100%;
+    width: 100%;
+    padding-left: 60px;
+    outline: none;
+    border-radius: 1.3rem;
+    border:none ;
+    font-size: 16px;
+}
+
+ form .field-set .row span{
+    position: absolute;
+    padding-left: 10px;
+    height: 100%;
+    color: #737373;
+    border:none;
+    display: flex;
+    background: none;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+ form .field-set .button input{
+    padding-left: 0px;
+    background-color:#fa870d ;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
 }
